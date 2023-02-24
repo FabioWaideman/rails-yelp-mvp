@@ -1,0 +1,9 @@
+<div class="card w-50">
+  <div class="card-body">
+    <h1 class="card-title"><%=@restaurant.name%></h1>
+    <h5><%= @restaurant.category %></h5>
+    <p class="card-text"></p><%= @restaurant.phone_number %>
+    <p class="card-text"></p><%= @restaurant.address %>
+    <p class="card-text"><%= link_to "Back", restaurants_path, class: "btn btn-primary" %></p>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+
+<div class="container">
+    <h1>Add a New Restaurant</h1>
+    <div class="form-inputs">
+    <%= simple_form_for @restaurant do |form| %>
+    <%= form.input :name %>
+    <%= form.input :address %>
+    <%= form.input :phone_number %>
+    <%= form.input :category, collection: Restaurant::CATEGORIES %>
+    </div>
+    <div class="form-actions">
+    <%= form.submit class: "btn btn-primary" %>
+    </div>
+    <% end %>
+</div>
